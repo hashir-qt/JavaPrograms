@@ -26,21 +26,29 @@ public class LoopsInJava {
         //  }
 
         
-        Scanner num;
-        num = new Scanner (System.in);
-        int c = 1;
-        int i = 1;
-         int n = num.nextInt();
-         while (i <= n) {
-            int j = 1;
-            while (j <= i) {
-                System.out.print(c+ " ");
-                c += 1;
-                j += 1;
-            }
-            System.out.println(" ");
-            i += 1;
+        // Scanner num;
+        // num = new Scanner (System.in);
+        // int c = 1;
+        // int i = 1;
+        //  int n = num.nextInt();
+        //  while (i <= n) {
+        //     int j = 1;
+        //     while (j <= i) {
+        //         System.out.print(c+ " ");
+        //         c += 1;
+        //         j += 1;
+        //     }
+        //     System.out.println(" ");
+        //     i += 1;
+
+        Scanner inp = new Scanner(System.in);
+        System.out.println("Enter number: ");
+        int n = inp.nextInt();
+        for(int i = 1; i <= 10; i++){
+            int table = n*i;
+            System.out.println(n+" x "+i+" = "+table);
+        }
          }
 
     }
-}
+

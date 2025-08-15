@@ -8,7 +8,10 @@ public class RandomConsonants {
 
         // Allowed capital letters excluding vowels
         String alphabets = "BCDFGHJKLMNPQRSTVWXYZ";
-
+        for(int i = 0; i <= alphabets.length() - 1;i++){
+           System.out.print(alphabets.codePointAt(i));
+        }
+        
         // Ask the user how many letters to generate
         System.out.print("Enter how many random letters you want to generate (without vowels): ");
         int count = input.nextInt();
